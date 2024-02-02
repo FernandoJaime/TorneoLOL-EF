@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>TORNEO LEAGUE OF LEGENDS</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background-color: #2E3035; 
+            color: #FFFFFF;
+        }
+
+        h1 {
+            text-align: center;
+            color: #FFD700; 
+            text-transform: uppercase;
+            font-size: 28px;
+            margin-bottom: 10px;
+        }
+
+        h2 {
+            color: #FFD700; 
+            font-size: 24px;
+            margin-bottom: 10px;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .info-container {
+            margin-bottom: 20px;
+            background-color: #36393F; 
+            padding: 15px;
+            border-radius: 8px;
+        }
+
+        table.border {
+            border-collapse: collapse;
+            width: 100%;
+            margin-top: 20px;
+        }
+
+        table.border th, table.border td {
+            padding: 12px;
+            border: 1px solid #666666; 
+            text-align: left;
+            background-color: #444648; 
+        }
+
+        table.border th {
+            background-color: #55585C; 
+        }
+
+       
+        footer {
+            margin-top: 20px;
+            text-align: right;
+            font-size: 12px;
+            color: #555;
+        }
+    </style>
+</head>
+<body>
+    <h1>TORNEO LEAGUE OF LEGENDS</h1>
+
+    <div class="container">
+        <div class="info-container">
+       
+            <h2>Información del Equipo</h2>
+            <p>Nombre del Equipo: @NOMBRE_EQUIPO</p>
+            <p>Partidas Ganadas: @GANADAS</p>
+            <p>Partidas Perdidas: @PERDIDAS</p>
+        </div>
+
+       
+        <div class="info-container">
+            <h2>Jugadores del Equipo</h2>
+            <table class="border">
+                <thead>
+                    <tr>
+                        <th>Nombre</th>
+                        <th>Edad</th>
+                        <th>Nickname</th>
+                        <th>Nacionalidad</th>
+                        <th>MVP</th>
+                        <th>Campeon</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     @FILAS_JUGADORES 
+                </tbody>
+            </table>
+        </div>
+
+     
+        <div class="info-container">
+            <h2>Partidas del Equipo</h2>
+            <table class="border">
+                <thead>
+                    <tr>
+                        <th>CodigoPartida</th>
+                        <th>Equipo 1</th>
+                        <th>Equipo 2</th>
+                        <th>Ganador</th>
+                        <th>Duración</th>
+                        <th>Jugador MVP</th>
+                    </tr>
+                </thead>
+                <tbody>
+                     @FILAS_PARTIDAS 
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    
+    <footer>
+        <p>Creadores: Jaime Fernando - Lodato Marcos</p>
+        <p>UAI - Universidad Abierta Interamericana</p>
+    </footer>
+</body>
+</html>
